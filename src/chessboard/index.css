@@ -1,0 +1,79 @@
+.chessboard-main {
+    padding: 16px;
+    border: 1px dashed gray;
+    border-radius: 4px;
+}
+
+.chessboard-item {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.chessboard-item:first-child {
+    margin-top: 0;
+}
+
+.chessboard-item-bei {
+    width: 110px;
+    height: 150px;
+    background: grey;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.chessboard-item-chi {
+    width: 108px;
+    height: 148px;
+    border: 1px dashed gray;
+    border-radius: 4px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.chessboard-item-chi:first-child {
+    margin-left: 0;
+}
+
+.chessboard-item-bei:first-child {
+    margin-left: 0;
+}
+
+.chessboard-row-item-img {
+    width: 110px;
+    height: 150px;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.chessboard-row-item-img:first-child {
+    margin-left: 0;
+}
+
+.chessboard-row-item-animation {
+    perspective: 500px; /* 设置透视距离 */
+}
+
+.chessboard-row-item-animation:hover {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.select-status {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
