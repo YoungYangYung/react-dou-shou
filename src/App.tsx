@@ -36,7 +36,7 @@ function App() {
       return;
     }
 
-    if (presNum < currentNum) {
+    if (presNum < currentNum && !(currentNum === 8 && presNum === 1)) {
       messageApi.open({
         type: 'error',
         content: `不能吃比自己大的棋子～`,
@@ -48,6 +48,14 @@ function App() {
       messageApi.open({
         type: 'error',
         content: `只能吃相邻的棋子～`,
+      })
+      return;
+    }
+
+    if (currentNum === 1 && presNum !== 2 && presNum !== 1) {
+      messageApi.open({
+        type: 'error',
+        content: '只有猫能抓老鼠～',
       })
       return;
     }
