@@ -1,9 +1,0 @@
-.main {
-  max-width: 800px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
