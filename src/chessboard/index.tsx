@@ -52,7 +52,7 @@ const Chessboard = ({ chessboardList, updateChessboard, doChessboard }: IProps) 
                                 );
                             };
 
-                            // 已被吃掉的棋子1
+                            // 已被吃掉的棋子
                             if (item === -1) {
                                 return (
                                     <div
